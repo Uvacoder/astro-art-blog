@@ -15,12 +15,12 @@ import Nav from "../components/Nav"
     </head>
     <body class="">
         <Nav client:load />
+        <main>
+            <slot />
+            <!-- your content is injected here -->
+            <footer class="mt-12 bg-black px-8 py-12 md:px-16 lg:px-32">
+                <div></div>
+            </footer>
+        </main>
     </body>
 </html>
-<main>
-    <slot />
-    <!-- your content is injected here -->
-    <!-- <footer class="mt-12 bg-black px-8 py-12 md:px-16 lg:px-32">
-        <div></div>
-    </footer> -->
-</main>
